@@ -10,7 +10,7 @@ class RegisterView extends StatelessWidget {
       child: Scaffold(
         body: BackgroundTemplate(
           widget: ListView(
-            padding: const EdgeInsets.symmetric(horizontal: 40),
+            padding: const EdgeInsets.symmetric(horizontal: 35),
             children: [
               const SizedBox(height: 140),
               Image.asset("assets/images/logo.png"),
@@ -18,7 +18,7 @@ class RegisterView extends StatelessWidget {
               const Text(
                 "Daftar akun",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 17,
                 ),
               ),
               const SizedBox(height: 10),

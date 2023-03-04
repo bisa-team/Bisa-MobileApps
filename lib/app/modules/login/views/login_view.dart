@@ -15,7 +15,7 @@ class LoginView extends GetView<LoginController> {
         child: Scaffold(
           body: BackgroundTemplate(
             widget: ListView(
-              padding: const EdgeInsets.symmetric(horizontal: 40),
+              padding: const EdgeInsets.symmetric(horizontal: 35),
               children: [
                 const SizedBox(height: 150),
                 Image.asset("assets/images/logo.png"),
@@ -69,7 +69,9 @@ class LoginView extends GetView<LoginController> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.toNamed(Routes.LUPA_PASSWORD);
+                      },
                       child: const Text(
                         "Lupa password?",
                         style: TextStyle(
