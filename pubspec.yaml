@@ -21,4 +21,7 @@ flutter:
   assets:
     - assets/images/logo.png
     - assets/images/splashscreen.png
+    - assets/images/AutentifikasiEmail.png
+    - assets/images/EmailBerhasilDiautentifikasi.png
+    - assets/images/ForgetPasswordEmailSent.png
 

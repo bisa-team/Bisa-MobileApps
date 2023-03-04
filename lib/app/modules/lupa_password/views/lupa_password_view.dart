@@ -1,4 +1,5 @@
 import 'package:bisa/app/modules/template/background_template.dart';
+import 'package:bisa/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -59,7 +60,9 @@ class LupaPasswordView extends GetView<LupaPasswordController> {
                 child: SizedBox(
                   width: 1000,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.toNamed(Routes.FORGOT_PASSWORD_EMAIL_SEND);
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0XFF25DB91),
                       padding: const EdgeInsets.symmetric(vertical: 10),

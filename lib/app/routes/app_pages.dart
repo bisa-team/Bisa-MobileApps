@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/Forgot_Password_EmailSend/bindings/forgot_password_email_send_binding.dart';
+import '../modules/Forgot_Password_EmailSend/views/forgot_password_email_send_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
@@ -43,6 +45,11 @@ class AppPages {
       name: _Paths.LUPA_PASSWORD,
       page: () => const LupaPasswordView(),
       binding: LupaPasswordBinding(),
+    ),
+    GetPage(
+      name: _Paths.FORGOT_PASSWORD_EMAIL_SEND,
+      page: () => const ForgotPasswordEmailSendView(),
+      binding: ForgotPasswordEmailSendBinding(),
     ),
   ];
 }
