@@ -1,3 +1,4 @@
+import 'package:bisa/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -16,7 +17,7 @@ class LoginView extends GetView<LoginController> {
             widget: ListView(
               padding: const EdgeInsets.symmetric(horizontal: 40),
               children: [
-                const SizedBox(height: 175),
+                const SizedBox(height: 150),
                 Image.asset("assets/images/logo.png"),
                 const SizedBox(height: 15),
                 const Text(
@@ -89,20 +90,24 @@ class LoginView extends GetView<LoginController> {
                   child: const Text(
                     "LOGIN",
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 15,
                     ),
                   ),
                 ),
+                const SizedBox(height: 0.00001),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text("Belum punya akun?"),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.toNamed(Routes.REGISTER);
+                      },
                       child: const Text(
                         "Daftar sekarang",
                         style: TextStyle(
-                          color: Color(0xff196276),
+                          color: Color(0xff25DB91),
+                          decoration: TextDecoration.underline,
                         ),
                       ),
                     ),

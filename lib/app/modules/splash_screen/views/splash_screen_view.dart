@@ -15,7 +15,7 @@ class SplashScreenView extends GetView<SplashScreenController> {
         body: GetBuilder<SplashScreenController>(
           init: SplashScreenController(),
           initState: (state) {
-            Timer.periodic(const Duration(seconds: 2), (timer) {
+            Timer.periodic(const Duration(seconds: 1), (timer) {
               Get.offAllNamed(Routes.LOGIN);
               timer.cancel();
             });
